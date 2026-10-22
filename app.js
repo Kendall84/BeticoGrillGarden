@@ -129,14 +129,13 @@
   }
 
   // Scroll-spy for category chips
+  var lock = null, lockTimer = null;
   function headerH() { return document.querySelector('.top').offsetHeight; }
-  function spy() {
-    var secs = document.querySelectorAll('.cat');
-    var y = window.scrollY + headerH() + 24, current = null;
-    secs.forEach(function (s) { if (s.offsetTop <= y) current = s.id; });
+  function topOf(n) { return n.getBoundingClientRect().top + window.scrollY; }
+  function setActive(id) {
     var active = null;
     document.querySelectorAll('#catList a').forEach(function (a) {
-      var on = a.getAttribute('data-target') === current;
+      var on = a.getAttribute('data-target') === id;
       a.classList.toggle('on', on);
       if (on) { a.setAttribute('aria-current', 'true'); active = a; } else a.removeAttribute('aria-current');
     });
@@ -145,17 +144,34 @@
       if (Math.abs(nav.scrollLeft - l) > 4) nav.scrollTo({ left: l, behavior: 'smooth' });
     }
   }
+  function spy() {
+    if (lock) { setActive(lock); return; }
+    var secs = document.querySelectorAll('.cat');
+    if (!secs.length) return;
+    var y = window.scrollY + headerH() + 24, current = secs[0].id, best = -1;
+    secs.forEach(function (s) { var t = topOf(s); if (t <= y && t > best) { best = t; current = s.id; } });
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = secs[secs.length - 1].id;
+    setActive(current);
+  }
+  function releaseLock(ms) {
+    clearTimeout(lockTimer);
+    lockTimer = setTimeout(function () { lock = null; spy(); }, ms);
+  }
   var tick = false;
   window.addEventListener('scroll', function () {
     if (tick) return; tick = true;
     requestAnimationFrame(function () { tick = false; spy(); });
   }, { passive: true });
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) {
+    window.addEventListener(ev, function () { if (lock) { lock = null; clearTimeout(lockTimer); spy(); } }, { passive: true });
+  });
 
   $('catList').addEventListener('click', function (e) {
     var a = e.target.closest('a'); if (!a) return;
     e.preventDefault();
-    var t = $(a.getAttribute('data-target'));
-    window.scrollTo({ top: t.offsetTop - headerH() + 2, behavior: 'smooth' });
+    var id = a.getAttribute('data-target');
+    lock = id; setActive(id);
+    window.scrollTo({ top: Math.max(0, topOf($(id)) - headerH() + 2), behavior: 'smooth' });
   });
   document.querySelector('.lang').addEventListener('click', function (e) {
     var b = e.target.closest('.lang-btn'); if (b) setLang(b.getAttribute('data-lang'));
