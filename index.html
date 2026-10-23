@@ -3,37 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BETICO Grill Garden · Menú</title>
-  <meta name="description" content="Menú digital de BETICO Grill Garden / Digital menu">
+  <title>BETICO Grill Garden</title>
+  <meta name="description" content="BETICO Grill Garden: cocina costarricense a la parrilla en un ambiente de jardín.">
   <meta name="theme-color" content="#d35a0f">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,400..700&family=Oswald:wght@300;400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Oswald:wght@300;400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <header class="top">
-    <div class="top-inner">
-      <a class="brand" href="#" aria-label="BETICO Grill Garden">
-        <img src="assets/logo.png" alt="BETICO Grill Garden" width="1024" height="439">
-      </a>
+  <header class="bar" id="bar">
+    <div class="bar-in">
+      <a class="brand" href="#inicio" aria-label="BETICO Grill Garden"><img src="assets/logo-transparent.png" alt="BETICO Grill Garden" width="1024" height="439"></a>
+      <nav class="links" aria-label="Principal">
+        <a href="#inicio" data-i="nav_home">Inicio</a>
+        <a href="#nosotros" data-i="nav_about">Nosotros</a>
+        <a href="#especialidades" data-i="nav_spec">Especialidades</a>
+        <a href="menu.html" class="menu-link" data-menu data-i="nav_menu">Menú</a>
+      </nav>
       <div class="lang" role="group" aria-label="Idioma / Language">
         <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ESPAÑOL</button>
         <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">ENGLISH</button>
       </div>
     </div>
-    <nav class="cats" id="cats" aria-label="Categorías"><ul id="catList"></ul></nav>
   </header>
 
-  <main id="menu" class="menu"></main>
+  <main>
+    <section class="hero" id="inicio">
+      <img src="images/maduro-con-queso.jpg" alt="Maduro con queso gratinado con hoja de menta" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-txt">
+        <p class="eyebrow" data-i="hero_eyebrow">Grill Garden</p>
+        <h1>BETICO</h1>
+        <p class="tag" data-i="hero_tag">Sabor tico a la parrilla, en un ambiente de jardín.</p>
+        <a class="btn" href="menu.html" data-menu data-i="btn_menu">Ir a mi menú</a>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="wrap two">
+        <div class="about-txt">
+          <h2 data-i="about_h">Cocina tica con fuego y frescura</h2>
+          <p data-i="about_p1">En BETICO Grill Garden mezclamos lo mejor de la cocina costarricense con el sabor de la parrilla: casados, gallos, tacos, arroces, pastas y platos a la plancha preparados con ingredientes frescos.</p>
+          <p data-i="about_p2">Un lugar para compartir con familia y amigos, desde algo para pasar el rato hasta un buen casado del día.</p>
+          <a class="btn ghost" href="menu.html" data-menu data-i="btn_menu2">Ver el menú completo</a>
+        </div>
+        <figure class="photo"><img src="images/casados-plancha.jpg" alt="Casado con carne y plato de pollo a la plancha con vegetales" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="spec" id="especialidades">
+      <div class="wrap">
+        <h2 class="center" data-i="spec_h">Nuestras especialidades</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="images/maduro-con-queso.jpg" alt="Maduro con queso" loading="lazy">
+            <div class="card-b"><h3 data-i="c1_t">Maduro con queso</h3><p data-i="c1_p">Canoa de plátano maduro con queso gratinado.</p><span class="price">₡1900</span></div>
+          </article>
+          <article class="card">
+            <img src="images/casados-plancha.jpg" alt="Casados" loading="lazy">
+            <div class="card-b"><h3 data-i="c2_t">Casados</h3><p data-i="c2_p">Arroz, frijoles frescos, picadillo del día, ensalada del huerto, huevo frito y plátanos maduros.</p><span class="price"><small data-i="from">desde</small> ₡5500</span></div>
+          </article>
+          <article class="card">
+            <img src="images/casado-pescado.jpg" alt="Casado con pescado a la plancha" loading="lazy">
+            <div class="card-b"><h3 data-i="c3_t">Casado con pescado</h3><p data-i="c3_p">Pescado a la plancha con arroz, frijoles, picadillo y ensalada.</p><span class="price">₡5500</span></div>
+          </article>
+        </div>
+        <p class="center"><a class="btn" href="menu.html" data-menu data-i="btn_menu3">Explorar el menú</a></p>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="band-in">
+        <img src="images/camiseta-betico-hamburguesa.jpg" alt="Equipo de BETICO con una hamburguesa en primer plano" loading="lazy">
+        <blockquote data-i="quote">“Hecho con sabor tico, servido con cariño.”</blockquote>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2 data-i="cta_h">¿Qué se te antoja hoy?</h2>
+      <a class="btn" href="menu.html" data-menu data-i="btn_menu">Ir a mi menú</a>
+    </section>
+  </main>
 
   <footer class="foot">
-    <p id="taxNote" class="tax"></p>
-    <p class="legend"><span class="sym" aria-hidden="true">🌱</span> <span id="legVeg"></span> <span class="sep">|</span> <span class="sym" aria-hidden="true">🌶️</span> <span id="legSpicy"></span></p>
+    <img src="assets/logo-transparent.png" alt="BETICO Grill Garden" width="160">
+    <p>Costa Rica · © 2026 BETICO Grill Garden</p>
   </footer>
-
-  <script src="menu-data.js"></script>
-  <script src="app.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>

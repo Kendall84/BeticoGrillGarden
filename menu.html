@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BETICO Grill Garden · Menú</title>
+  <meta name="description" content="Menú digital de BETICO Grill Garden / Digital menu">
+  <meta name="theme-color" content="#d35a0f">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,400..700&family=Oswald:wght@300;400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="index.html" aria-label="BETICO Grill Garden">
+        <img src="assets/logo.png" alt="BETICO Grill Garden" width="1024" height="439">
+      </a>
+      <div class="lang" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-btn" data-lang="es" aria-pressed="true">ESPAÑOL</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">ENGLISH</button>
+      </div>
+    </div>
+    <nav class="cats" id="cats" aria-label="Categorías"><ul id="catList"></ul></nav>
+  </header>
+
+  <main id="menu" class="menu"></main>
+
+  <footer class="foot">
+    <p id="taxNote" class="tax"></p>
+    <p class="legend"><span class="sym" aria-hidden="true">🌱</span> <span id="legVeg"></span> <span class="sep">|</span> <span class="sym" aria-hidden="true">🌶️</span> <span id="legSpicy"></span></p>
+  </footer>
+
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
