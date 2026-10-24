@@ -83,12 +83,15 @@
         h.appendChild(el('span', null, b.title[lang]));
         if (b.price) { h.appendChild(el('span', 'dots')); h.appendChild(price(b.price)); }
         g.appendChild(h);
-        var ul2 = el('ul', 'items');
-        b.items.forEach(function (it) {
-          // group variants without price (e.g. shrimp styles)
-          ul2.appendChild(itemEl(it));
-        });
-        g.appendChild(ul2);
+        if (b.items.length && b.items[0].type === 'list') {
+          var chips = el('ul', 'sides');
+          b.items[0].items.forEach(function (x) { chips.appendChild(el('li', null, x[lang])); });
+          g.appendChild(chips);
+        } else {
+          var ul2 = el('ul', 'items');
+          b.items.forEach(function (it) { ul2.appendChild(itemEl(it)); });
+          g.appendChild(ul2);
+        }
         parent.appendChild(g);
       }
     });
@@ -178,4 +181,8 @@
   });
 
   render();
+  if (location.hash) {
+    var tgt = document.getElementById(location.hash.slice(1));
+    if (tgt) tgt.scrollIntoView();
+  }
 })();

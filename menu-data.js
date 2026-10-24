@@ -967,5 +967,727 @@ window.MENU_DATA = [
     "tags": []
    }
   ]
+ },
+ {
+  "title": {
+   "es": "Bebidas naturales",
+   "en": "Alcohol-free drinks"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Limonada",
+     "en": "Lemonade"
+    },
+    "price": "2000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Limonada con hierba buena",
+     "en": "Lemonade with mint"
+    },
+    "price": "2400",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Smoothies",
+     "en": "Smoothies"
+    },
+    "price": null,
+    "tags": [],
+    "variants": [
+     {
+      "type": "item",
+      "name": {
+       "es": "Con agua",
+       "en": "With water"
+      },
+      "price": "2000",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "Con leche",
+       "en": "With milk"
+      },
+      "price": "2500",
+      "tags": []
+     }
+    ]
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Gaseosas",
+     "en": "Soft drinks"
+    },
+    "price": null,
+    "tags": [],
+    "variants": [
+     {
+      "type": "item",
+      "name": {
+       "es": "Desechable",
+       "en": "Disposable"
+      },
+      "price": "1850",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "Vidrio",
+       "en": "Glass bottle"
+      },
+      "price": "1500",
+      "tags": []
+     }
+    ]
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Tropical",
+     "en": "Tropical"
+    },
+    "price": null,
+    "tags": [],
+    "variants": [
+     {
+      "type": "item",
+      "name": {
+       "es": "Desechable",
+       "en": "Disposable"
+      },
+      "price": "1800",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "Vidrio",
+       "en": "Glass bottle"
+      },
+      "price": "1500",
+      "tags": []
+     }
+    ]
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Agua embotellada",
+     "en": "Bottled water"
+    },
+    "price": null,
+    "tags": [],
+    "variants": [
+     {
+      "type": "item",
+      "name": {
+       "es": "600 ml",
+       "en": "600 ml"
+      },
+      "price": "1600",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "1000 ml",
+       "en": "1000 ml"
+      },
+      "price": "2100",
+      "tags": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Cócteles",
+   "en": "Cocktails"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Mojito",
+     "en": "Mojito"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Piña colada",
+     "en": "Piña colada"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Mai Tai",
+     "en": "Mai Tai"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Daiquirí",
+     "en": "Daiquiri"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Cacitrán de maracuyá",
+     "en": "Passion fruit cacitrán"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Sangría",
+     "en": "Sangria"
+    },
+    "price": "4000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Caipirinha",
+     "en": "Caipirinha"
+    },
+    "price": "4000",
+    "tags": [],
+    "desc": {
+     "es": "Piña-albahaca / Frutos rojos",
+     "en": "Pineapple-basil / Red berries"
+    }
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Bloody Mary",
+     "en": "Bloody Mary"
+    },
+    "price": "4500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Blue Sea",
+     "en": "Blue Sea"
+    },
+    "price": "4500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Margarita",
+     "en": "Margarita"
+    },
+    "price": null,
+    "tags": [],
+    "variants": [
+     {
+      "type": "item",
+      "name": {
+       "es": "Clásica",
+       "en": "Classic"
+      },
+      "price": "4000",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "Blue",
+       "en": "Blue"
+      },
+      "price": "4500",
+      "tags": []
+     },
+     {
+      "type": "item",
+      "name": {
+       "es": "Maracuyá",
+       "en": "Passion fruit"
+      },
+      "price": "4500",
+      "tags": []
+     }
+    ]
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Gin & Tonic",
+     "en": "Gin & Tonic"
+    },
+    "price": "4900",
+    "tags": [],
+    "desc": {
+     "es": "Clásico / Naranja-jengibre / Frutos rojos",
+     "en": "Classic / Orange-ginger / Red berries"
+    }
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Licores",
+   "en": "Liquors"
+  },
+  "blocks": [
+   {
+    "type": "group",
+    "title": {
+     "es": "Whisky",
+     "en": "Whisky"
+    },
+    "price": null,
+    "items": [
+     {
+      "type": "list",
+      "items": [
+       {
+        "es": "Johnnie Walker",
+        "en": "Johnnie Walker",
+        "tags": []
+       },
+       {
+        "es": "Old Parr",
+        "en": "Old Parr",
+        "tags": []
+       },
+       {
+        "es": "Chivas",
+        "en": "Chivas",
+        "tags": []
+       },
+       {
+        "es": "Buchanan's",
+        "en": "Buchanan's",
+        "tags": []
+       },
+       {
+        "es": "Jack Daniel's",
+        "en": "Jack Daniel's",
+        "tags": []
+       },
+       {
+        "es": "Jameson",
+        "en": "Jameson",
+        "tags": []
+       },
+       {
+        "es": "Glenfiddich",
+        "en": "Glenfiddich",
+        "tags": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "group",
+    "title": {
+     "es": "Ron",
+     "en": "Rum"
+    },
+    "price": null,
+    "items": [
+     {
+      "type": "list",
+      "items": [
+       {
+        "es": "Flor de Caña",
+        "en": "Flor de Caña",
+        "tags": []
+       },
+       {
+        "es": "Centenario",
+        "en": "Centenario",
+        "tags": []
+       },
+       {
+        "es": "Zacapa",
+        "en": "Zacapa",
+        "tags": []
+       },
+       {
+        "es": "Bacardi",
+        "en": "Bacardi",
+        "tags": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "group",
+    "title": {
+     "es": "Tequila",
+     "en": "Tequila"
+    },
+    "price": null,
+    "items": [
+     {
+      "type": "list",
+      "items": [
+       {
+        "es": "Jose Cuervo",
+        "en": "Jose Cuervo",
+        "tags": []
+       },
+       {
+        "es": "Don Julio",
+        "en": "Don Julio",
+        "tags": []
+       },
+       {
+        "es": "Patrón",
+        "en": "Patrón",
+        "tags": []
+       },
+       {
+        "es": "1800",
+        "en": "1800",
+        "tags": []
+       },
+       {
+        "es": "Milagro",
+        "en": "Milagro",
+        "tags": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "group",
+    "title": {
+     "es": "Vodka",
+     "en": "Vodka"
+    },
+    "price": null,
+    "items": [
+     {
+      "type": "list",
+      "items": [
+       {
+        "es": "Absolut",
+        "en": "Absolut",
+        "tags": []
+       },
+       {
+        "es": "Smirnoff",
+        "en": "Smirnoff",
+        "tags": []
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "group",
+    "title": {
+     "es": "Ginebra",
+     "en": "Gin"
+    },
+    "price": null,
+    "items": [
+     {
+      "type": "list",
+      "items": [
+       {
+        "es": "Hendrick's",
+        "en": "Hendrick's",
+        "tags": []
+       },
+       {
+        "es": "Martin Miller's",
+        "en": "Martin Miller's",
+        "tags": []
+       },
+       {
+        "es": "Tanqueray",
+        "en": "Tanqueray",
+        "tags": []
+       },
+       {
+        "es": "Bombay",
+        "en": "Bombay",
+        "tags": []
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Shots",
+   "en": "Shots"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Moraguaro",
+     "en": "Moraguaro"
+    },
+    "price": "1500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Chiliguaro",
+     "en": "Chiliguaro"
+    },
+    "price": "1500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Miguelito",
+     "en": "Miguelito"
+    },
+    "price": "2500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Derrame cerebral",
+     "en": "Derrame cerebral"
+    },
+    "price": "2500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Mamadita",
+     "en": "Mamadita"
+    },
+    "price": "2900",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Pitufo",
+     "en": "Pitufo"
+    },
+    "price": "2900",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Cerveza",
+   "en": "Beer"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Nacional",
+     "en": "Domestic"
+    },
+    "price": "1800",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Bavaria",
+     "en": "Bavaria"
+    },
+    "price": "2000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Free Damm",
+     "en": "Free Damm"
+    },
+    "price": "2200",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Extranjera",
+     "en": "Imported"
+    },
+    "price": "2500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Smirnoff",
+     "en": "Smirnoff"
+    },
+    "price": "2500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Kombucha",
+     "en": "Kombucha"
+    },
+    "price": "3000",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Artesanal",
+     "en": "Craft beer"
+    },
+    "price": "3500",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Café",
+   "en": "Coffee"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Café americano de la casa",
+     "en": "House americano"
+    },
+    "price": "1200",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café latte de la casa",
+     "en": "House latte"
+    },
+    "price": "1400",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café espresso Britt",
+     "en": "Britt espresso"
+    },
+    "price": "1450",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café americano Britt",
+     "en": "Britt americano"
+    },
+    "price": "1950",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café espresso doble Britt",
+     "en": "Britt double espresso"
+    },
+    "price": "1950",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café latte Britt",
+     "en": "Britt latte"
+    },
+    "price": "2150",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Cappuccino Britt",
+     "en": "Britt cappuccino"
+    },
+    "price": "2500",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Mocaccino Britt",
+     "en": "Britt mocaccino"
+    },
+    "price": "2700",
+    "tags": []
+   },
+   {
+    "type": "item",
+    "name": {
+     "es": "Café frío Betico",
+     "en": "Betico iced coffee"
+    },
+    "price": "4000",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": {
+   "es": "Infusiones",
+   "en": "Tea"
+  },
+  "blocks": [
+   {
+    "type": "item",
+    "name": {
+     "es": "Infusiones",
+     "en": "Infusions"
+    },
+    "price": "1900",
+    "tags": [],
+    "desc": {
+     "es": "Digestivos / Relajantes / Frutales",
+     "en": "Digestive / Relaxing / Fruity"
+    }
+   }
+  ]
  }
 ];

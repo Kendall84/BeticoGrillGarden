@@ -31,7 +31,7 @@ body{
 .cats a.on{background:var(--ink);border-color:var(--ink);color:#fff}
 
 .menu{max-width:1040px;margin:0 auto;padding:20px 16px 8px;display:grid;gap:20px;grid-template-columns:1fr}
-.cat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 20px 14px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.cat{scroll-margin-top:140px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 20px 14px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
 .cat h2{margin:0 0 14px;font:600 1.6rem/1.1 var(--head-font);color:var(--orange);letter-spacing:.01em;
   display:flex;align-items:center;gap:12px}
 .cat h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--orange) 0 28px,var(--line) 28px)}
@@ -63,7 +63,7 @@ body{
   .brand img{height:84px}
   .menu{display:block;columns:2;column-gap:24px;padding-top:28px}
   .cat{break-inside:avoid;margin-bottom:24px}
-  .cat{padding:26px 26px 16px}
+  .cat{padding:26px 26px 16px;scroll-margin-top:172px}
   .cat h2{font-size:1.85rem}
 }
 @media (min-width:1100px){.name{font-size:1.1rem}}
